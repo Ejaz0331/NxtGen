@@ -1,0 +1,107 @@
+1
+00:00:00,000 --> 00:00:04,766
+Meet NxtGen Demand, a working customer demand dashboard for small retail teams. It
+
+2
+00:00:04,766 --> 00:00:09,531
+brings sales channels into a shared view and helps a team plan the
+
+3
+00:00:09,531 --> 00:00:14,297
+next two weeks. This walkthrough uses synthetic data and computed application outputs.
+
+4
+00:00:15,297 --> 00:00:19,507
+A retailer selling through several channels needs to know which products are moving,
+
+5
+00:00:19,507 --> 00:00:23,717
+how revenue compares with channel spending, and whether stock could cover upcoming demand.
+
+6
+00:00:23,717 --> 00:00:27,928
+NxtGen starts from a simple aggregate sales export. The problem is a design
+
+7
+00:00:27,928 --> 00:00:32,138
+hypothesis that still needs customer validation.
+
+8
+00:00:33,138 --> 00:00:38,520
+The Overview offers period, channel, and product filters. For the sample period from
+
+9
+00:00:38,520 --> 00:00:43,903
+September twenty ninth to October twenty sixth, the engine calculates 7413 orders and
+
+10
+00:00:43,903 --> 00:00:49,285
+9481 units sold. The revenue total shown here is in Indian rupees. The
+
+11
+00:00:49,285 --> 00:00:54,668
+same selection drives product rankings and the demand chart.
+
+12
+00:00:55,668 --> 00:01:00,126
+Channel insights compares recorded revenue and spending. In this example, Direct has the
+
+13
+00:01:00,126 --> 00:01:04,583
+highest revenue per rupee of recorded spend. The comparison can guide a margin
+
+14
+00:01:04,583 --> 00:01:09,041
+and capacity review, but does not establish profit or marketing attribution. New customer
+
+15
+00:01:09,041 --> 00:01:13,499
+counts can overlap between channels.
+
+16
+00:01:14,499 --> 00:01:19,459
+The demand planner projects 5132 units over the next fourteen days. It repeats
+
+17
+00:01:19,459 --> 00:01:24,419
+the latest weekly pattern with a capped trend adjustment. Entering one thousand units
+
+18
+00:01:24,419 --> 00:01:29,379
+available shows a baseline shortage. Ten thousand units shows a surplus. The planning
+
+19
+00:01:29,379 --> 00:01:34,339
+range is illustrative and is not a statistical confidence interval.
+
+20
+00:01:35,339 --> 00:01:40,056
+The app runs with Node and a browser, with no API keys or
+
+21
+00:01:40,056 --> 00:01:44,772
+dependency installation. CSV validation checks dates and numeric counts. Imported data stays in
+
+22
+00:01:44,772 --> 00:01:49,489
+memory and resets on refresh. Nine automated tests pass. This video presents computed
+
+23
+00:01:49,489 --> 00:01:54,205
+results rather than a recorded browser session.
+
+24
+00:01:55,205 --> 00:02:00,277
+The handoff includes source code, a sample CSV, an action plan export, setup
+
+25
+00:02:00,277 --> 00:02:05,348
+and deployment instructions, a pitch PDF, and an MIT license. Next, we would
+
+26
+00:02:05,348 --> 00:02:10,419
+test with retailers and backtest the forecast before an inventory pilot. NxtGen makes
+
+27
+00:02:10,419 --> 00:02:15,491
+the assumptions visible so teams can review the next decision.
